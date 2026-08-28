@@ -1,0 +1,121 @@
+LINUX PHASE 1 - DAY 2
+FILESYSTEM & NAVIGATION
+
+1. pwd
+
+Command:
+pwd
+
+Output:
+/home/gunam
+
+
+2. ls
+
+Command:
+ls
+
+Output:
+bin
+
+
+3. ls -la
+
+Command:
+ls -la
+
+Output:
+Hidden and visible files were displayed.
+
+
+4. cd /
+
+Command:
+cd /
+
+Result:
+Changed to root directory.
+
+
+5. pwd
+
+Output:
+/
+
+
+6. ls
+
+Output:
+bin
+boot
+dev
+etc
+home
+init
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+project
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+
+
+7. cd /home
+
+Output:
+/home
+
+
+8. cd gunam
+
+Output:
+/home/gunam
+
+
+9. cd ..
+
+Output:
+/home
+
+
+10. tree
+
+Result:
+Linux directory structure displayed successfully.
+
+
+11. Find .log files
+
+Command:
+find /home/gunam -type f -name "*.log"
+
+Output:
+/home/gunam/.cache/ubuntu-pro/ubuntu-pro.log
+
+
+12. Find Top 5 Largest Files
+
+Command:
+find /home/gunam -type f -printf '%s %p\n' | sort -nr | head -5
+
+Output:
+3801 /home/gunam/.bashrc
+3588 /home/gunam/.cache/ubuntu-pro/ubuntu-pro.log
+3152 /home/gunam/.bash_history
+807 /home/gunam/.profile
+641 /home/gunam/.cache/ubuntu-insights/wsl_setup/uploaded/1787196974.json
+
+
+DAY 2 STATUS:
+Completed successfully.

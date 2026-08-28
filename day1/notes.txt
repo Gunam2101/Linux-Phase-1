@@ -1,0 +1,14 @@
+Linux:
+Linux is an operating system kernel.
+
+Terminal:
+A terminal is an application used to interact with the shell.
+
+Shell:
+A shell interprets commands and executes them.
+
+Bash:
+Bash is a commonly used Linux shell.
+
+PATH:
+PATH contains directories where executable programs are searched.

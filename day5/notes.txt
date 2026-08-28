@@ -1,0 +1,111 @@
+DAY 5 - PROCESSES & SYSTEM MONITORING
+
+PROCESS
+
+A process is a running program.
+
+Every process has a PID.
+
+PID = Process ID
+PPID = Parent Process ID
+
+
+PS
+
+ps displays processes associated with the current terminal.
+
+ps -f displays detailed process information.
+
+ps aux displays processes from all users.
+
+
+PGREP
+
+pgrep searches for processes using their name.
+
+Example:
+
+pgrep bash
+
+pgrep -a bash
+
+The -a option displays PID and command.
+
+
+BACKGROUND PROCESS
+
+A process can be started in the background using &.
+
+Example:
+
+sleep 300 &
+
+
+JOBS
+
+jobs displays jobs running or stopped in the current shell.
+
+
+FG
+
+fg brings a background job to the foreground.
+
+Example:
+
+fg %2
+
+
+CTRL+Z
+
+Ctrl+Z stops a foreground process.
+
+
+BG
+
+bg resumes a stopped job in the background.
+
+Example:
+
+bg %2
+
+
+KILL
+
+kill sends a signal to a process.
+
+Example:
+
+kill PID
+
+Only test sleep processes were terminated during practice.
+
+
+NICE
+
+nice starts a process with a specified nice value.
+
+Example:
+
+nice -n 10 sleep 300 &
+
+Initial NI:
+
+10
+
+
+RENICE
+
+renice changes the nice value of an already running process.
+
+Example:
+
+renice 15 -p PID
+
+The test process changed from:
+
+NI 10 → NI 15
+
+
+DAY 5 STATUS:
+
+Processes and system monitoring practical completed successfully.

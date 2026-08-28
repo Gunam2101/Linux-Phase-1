@@ -1,0 +1,46 @@
+DAY 2 - FILESYSTEM & NAVIGATION
+
+pwd = Print Working Directory
+Shows the current directory.
+
+ls = List
+Shows files and directories.
+
+ls -la
+Shows hidden files and detailed information.
+
+cd = Change Directory
+Used to move between directories.
+
+cd /
+Moves to the root directory.
+
+cd ..
+Moves to the parent directory.
+
+tree
+Displays the directory structure as a tree.
+
+find
+Searches for files and directories.
+
+-type f
+Searches only for files.
+
+-name "*.log"
+Searches for files ending with .log.
+
+sort -nr
+Sorts numbers in reverse numerical order.
+
+head -5
+Displays the first five results.
+
+Root directory:
+/
+
+Home directory:
+ /home
+
+My home directory:
+ /home/gunam

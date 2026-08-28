@@ -1,0 +1,142 @@
+LINUX PHASE 1 - DAY 5
+PROCESSES & SYSTEM MONITORING
+COMMAND OUTPUTS
+
+1. ps
+
+Command:
+ps
+
+Current bash process and ps process were displayed.
+
+
+2. ps -f
+
+Command:
+ps -f
+
+Detailed process information was displayed.
+
+Important fields:
+UID
+PID
+PPID
+C
+STIME
+TTY
+TIME
+CMD
+
+
+3. ps aux
+
+Command:
+ps aux
+
+Processes from all users were displayed.
+
+
+4. pgrep
+
+Command:
+pgrep bash
+
+Bash process IDs were displayed.
+
+Command:
+pgrep -a bash
+
+PID and Bash command were displayed.
+
+
+5. Background Process
+
+Command:
+sleep 300 &
+
+A background sleep process was created.
+
+
+6. jobs
+
+Command:
+jobs
+
+Background jobs were displayed.
+
+
+7. fg
+
+Command:
+fg %2
+
+A background job was brought to the foreground.
+
+
+8. Ctrl+Z
+
+The foreground sleep process was stopped using Ctrl+Z.
+
+
+9. bg
+
+Command:
+bg %2
+
+The stopped process was resumed in the background.
+
+
+10. kill
+
+Command:
+kill PID
+
+The test sleep processes were terminated successfully.
+
+
+11. nice
+
+Command:
+nice -n 10 sleep 300 &
+
+The process started with:
+
+NI = 10
+
+
+12. Process Priority
+
+Command:
+ps -o pid,ni,pri,cmd -p PID
+
+The test process showed:
+
+NI = 10
+
+
+13. renice
+
+Command:
+renice 15 -p PID
+
+Output:
+
+old priority 10, new priority 15
+
+
+14. Priority Verification
+
+Command:
+ps -o pid,ni,pri,cmd -p PID
+
+The process showed:
+
+NI = 15
+
+
+15. Cleanup
+
+The test process was terminated using kill.
+
+DAY 5 STATUS:
+Completed successfully.

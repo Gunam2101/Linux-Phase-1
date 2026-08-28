@@ -1,0 +1,155 @@
+LINUX PHASE 1 - DAY 1
+Installation & Environment
+
+1. Check Current Shell
+Command:
+echo $SHELL
+
+Output:
+/bin/bash
+
+
+2. Check PATH
+Command:
+echo $PATH
+
+Output:
+/home/gunam/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:...
+
+
+3. Environment Variables
+Command:
+env
+
+Important Output:
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu
+USER=gunam
+HOME=/home/gunam
+PWD=/home/gunam
+LANG=C.UTF-8
+
+
+4. Print Environment Variables
+Command:
+printenv
+
+Output:
+Environment variables displayed successfully.
+
+
+5. Check Bash
+Command:
+which bash
+
+Output:
+/usr/bin/bash
+
+
+6. Check Zsh
+Command:
+which zsh
+
+Output:
+Zsh is not installed.
+
+
+7. Home Directory
+Command:
+echo $HOME
+
+Output:
+/home/gunam
+
+
+8. Username
+Command:
+echo $USER
+
+Output:
+gunam
+
+
+9. Current Directory
+Command:
+echo $PWD
+
+Output:
+/home/gunam
+
+
+10. Working Directory
+Command:
+pwd
+
+Output:
+/home/gunam
+
+
+11. Bash Prompt
+Command:
+echo $PS1
+
+Output:
+Bash prompt configuration displayed.
+
+
+12. Check .bashrc
+Command:
+ls -la ~/.bashrc
+
+Output:
+-rw-r--r-- 1 gunam gunam 3771 /home/gunam/.bashrc
+
+
+13. Alias
+Command:
+alias ll='ls -la'
+
+Command:
+ll
+
+Result:
+Directory contents displayed successfully.
+
+
+14. Create ~/bin
+Command:
+mkdir -p ~/bin
+
+Command:
+ls -ld ~/bin
+
+Output:
+/home/gunam/bin
+
+
+15. Add ~/bin to PATH
+Command:
+export PATH="$HOME/bin:$PATH"
+
+Result:
+~/bin added to PATH.
+
+
+16. Make PATH Permanent
+Command:
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+
+Command:
+source ~/.bashrc
+
+Result:
+.bashrc reloaded successfully.
+
+
+17. Final PATH Verification
+Command:
+echo $PATH
+
+Result:
+/home/gunam/bin appears at the beginning of PATH.
+
+
+DAY 1 STATUS:
+Completed successfully.

@@ -1,0 +1,153 @@
+DAY 3 - PERMISSIONS & OWNERSHIP
+
+Linux permissions control who can read, write and execute files and directories.
+
+Permission symbols:
+
+r = read
+w = write
+x = execute
+- = no permission
+
+Permission categories:
+
+u = user/owner
+g = group
+o = others
+
+Example:
+
+-rw-r--r--
+
+Owner:
+rw- = read and write
+
+Group:
+r-- = read only
+
+Others:
+r-- = read only
+
+
+CHMOD
+
+chmod is used to change permissions.
+
+Example:
+
+chmod u-w test.txt
+
+Removes write permission from the owner.
+
+chmod u+w test.txt
+
+Adds write permission to the owner.
+
+
+NUMERIC PERMISSIONS
+
+r = 4
+w = 2
+x = 1
+
+7 = rwx
+6 = rw-
+5 = r-x
+4 = r--
+0 = ---
+
+644 = rw-r--r--
+600 = rw-------
+755 = rwxr-xr-x
+
+
+CHOWN
+
+chown changes file ownership.
+
+Example:
+
+chown gunam test.txt
+
+
+CHGRP
+
+chgrp changes the group ownership.
+
+Example:
+
+chgrp projectgrp test.txt
+
+
+UMASK
+
+umask controls default permissions for newly created files and directories.
+
+Current umask:
+
+0022
+
+Symbolic:
+
+u=rwx,g=rx,o=rx
+
+
+SHARED DIRECTORY
+
+Created:
+
+~/bin/shared
+
+Permission:
+
+770
+
+Owner:
+rwx
+
+Group:
+rwx
+
+Others:
+---
+
+
+READ-ONLY DIRECTORY
+
+Created:
+
+~/bin/readonly
+
+Permission:
+
+555
+
+Owner:
+r-x
+
+Group:
+r-x
+
+Others:
+r-x
+
+
+SCRIPT PERMISSION
+
+The execute permission was removed:
+
+chmod u-x test-script.sh
+
+The script produced:
+
+Permission denied
+
+The execute permission was restored:
+
+chmod u+x test-script.sh
+
+The script executed successfully.
+
+
+DAY 3 STATUS:
+Completed successfully.

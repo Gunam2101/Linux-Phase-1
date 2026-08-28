@@ -1,0 +1,70 @@
+DAY 4 - TEXT PROCESSING
+
+grep:
+Searches for matching text.
+
+grep -i:
+Case-insensitive search.
+
+grep -v:
+Excludes matching lines.
+
+grep -n:
+Displays line numbers.
+
+grep -c:
+Counts matching lines.
+
+awk:
+Processes structured text and works with fields.
+
+-F',':
+Uses comma as field separator.
+
+$1:
+First field.
+
+$2:
+Second field.
+
+$3:
+Third field.
+
+sed:
+Search, replace, print and delete text.
+
+sort:
+Sorts data.
+
+sort -n:
+Numeric ascending order.
+
+sort -nr:
+Numeric descending order.
+
+uniq:
+Removes consecutive duplicate lines.
+
+uniq -c:
+Counts duplicate lines.
+
+cut:
+Extracts selected fields.
+
+tr:
+Translates or deletes characters.
+
+wc:
+Counts lines, words and characters.
+
+Pipeline:
+The | symbol sends the output of one command to another command.
+
+Example:
+
+grep "AI" students.txt | wc -l
+
+This counts the number of AI students.
+
+DAY 4 STATUS:
+Completed successfully.

@@ -1,0 +1,150 @@
+LINUX PHASE 1 - DAY 3
+PERMISSIONS & OWNERSHIP
+COMMAND OUTPUTS
+
+1. File Permission
+
+Command:
+ls -l test.txt
+
+Output:
+-rw-r--r-- 1 gunam gunam 0 test.txt
+
+
+2. Remove Write Permission
+
+Command:
+chmod u-w test.txt
+
+Output:
+-r--r--r-- 1 gunam gunam 0 test.txt
+
+
+3. Restore Write Permission
+
+Command:
+chmod u+w test.txt
+
+Output:
+-rw-r--r-- 1 gunam gunam 0 test.txt
+
+
+4. Numeric Permission 644
+
+Command:
+chmod 644 test.txt
+
+Output:
+-rw-r--r-- 1 gunam gunam 0 test.txt
+
+
+5. Numeric Permission 600
+
+Command:
+chmod 600 test.txt
+
+Output:
+-rw------- 1 gunam gunam 0 test.txt
+
+
+6. Restore 644
+
+Command:
+chmod 644 test.txt
+
+Output:
+-rw-r--r-- 1 gunam gunam 0 test.txt
+
+
+7. User Information
+
+Command:
+id gunam
+
+Output:
+uid=1000(gunam) gid=1000(gunam) groups=1000(gunam),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),1001(projectgrp)
+
+
+8. Change Owner
+
+Command:
+chown gunam test.txt
+
+Output:
+-rw-r--r-- 1 gunam gunam 0 test.txt
+
+
+9. Change Group
+
+Command:
+chgrp projectgrp test.txt
+
+Output:
+-rw-r--r-- 1 gunam projectgrp 0 test.txt
+
+
+10. Umask
+
+Command:
+umask
+
+Output:
+0022
+
+Command:
+umask -S
+
+Output:
+u=rwx,g=rx,o=rx
+
+
+11. Shared Directory
+
+Command:
+ls -ld ~/bin/shared
+
+Output:
+drwxrwx--- 2 gunam projectgrp ... /home/gunam/bin/shared
+
+
+12. Read-Only Directory
+
+Command:
+ls -ld ~/bin/readonly
+
+Output:
+dr-xr-xr-x 2 gunam gunam ... /home/gunam/bin/readonly
+
+
+13. Script Permission Break
+
+Command:
+chmod u-x test-script.sh
+
+Result:
+-rw-r--r-- 1 gunam gunam ... test-script.sh
+
+Execution:
+./test-script.sh
+
+Result:
+Permission denied
+
+
+14. Script Permission Fix
+
+Command:
+chmod u+x test-script.sh
+
+Result:
+-rwxr--r-- 1 gunam gunam ... test-script.sh
+
+Execution:
+./test-script.sh
+
+Output:
+Linux Day 3 Permission Test
+
+
+DAY 3 STATUS:
+Completed successfully.
